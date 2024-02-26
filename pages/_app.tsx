@@ -9,9 +9,15 @@ const pretendard = localFont({
   weight: "300 400 500 600 700"
 });
 
+const splineSans = localFont({
+  src: "../styles/font/SplineSans/SplineSansMono[wght].ttf",
+  preload: true,
+  weight: "300 400 500 600 700"
+});
+
 export default function App({ Component, pageProps }: AppProps) {
   return <main
-  className={pretendard.className}
+  className={splineSans.className}
   >
 <Component {...pageProps} />;
   </main> 
