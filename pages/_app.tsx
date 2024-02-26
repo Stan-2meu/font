@@ -12,12 +12,16 @@ const pretendard = localFont({
 const splineSans = localFont({
   src: "../styles/font/SplineSans/SplineSansMono[wght].ttf",
   preload: true,
-  weight: "300 400 500 600 700"
+});
+
+const notoSans = localFont({
+  src: "../styles/font/NotoSans/NotoSans-VariableFont_wdth,wght.ttf",
+  preload: true,
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return <main
-  className={splineSans.className}
+  className={notoSans.className}
   >
 <Component {...pageProps} />;
   </main> 
